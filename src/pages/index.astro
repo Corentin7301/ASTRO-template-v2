@@ -1,0 +1,17 @@
+---
+// Component Imports
+import Counter from '../components/Counter.vue';
+import MainLayout from '../layouts/MainLayout.astro';
+import defaultMetas from '../datas/defaultMetas.json';
+
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+	<MainLayout defaultMetas={defaultMetas} title='Hello!'>
+			<Counter client:visible>
+				<h1 class=" font-extrabold ">Hello, welcome to <span class="text-orange-500">Astro</span> (with <span
+						class="text-orange-500">Vue</span> and <span class="text-orange-500">Tailwind</span>)!</h1>
+			</Counter>
+	</MainLayout>

@@ -1,0 +1,53 @@
+---
+let {defaultMetas,title,description,imageLink,twitterTitle,twitterDescription} = Astro.props;
+---
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+
+<meta name="description" content={description ? description :
+        JSON.parse(JSON.stringify(defaultMetas.defaultDescription))}>
+    <meta property="og:title" content={title ? title : JSON.parse(JSON.stringify(defaultMetas.defaultTitle)) } />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={JSON.parse(JSON.stringify(defaultMetas.defaultUrl))} />
+    <meta property="og:image" content={imageLink ? imageLink :
+        JSON.parse(JSON.stringify(defaultMetas.defaultImageLink))} />
+    <meta property="og:image:width" content="740" />
+    <meta property="og:image:height" content="300" />
+    <meta property="twitter:card" content={imageLink ? imageLink :
+        JSON.parse(JSON.stringify(defaultMetas.defaultImageLink))} />
+    <meta property="twitter:site" content={JSON.parse(JSON.stringify(defaultMetas.defaultTwitter))} />
+    <meta property="twitter:url" content={JSON.parse(JSON.stringify(defaultMetas.defaultTwitterUrl))} />
+    <meta property="twitter:creator" content={JSON.parse(JSON.stringify(defaultMetas.defaultTwitter))} />
+    <meta property="twitter:title" content={twitterTitle ? twitterTitle :
+        JSON.parse(JSON.stringify(defaultMetas.defaultTwitterTitle))} />
+    <meta property="twitter:description" content={twitterDescription ? twitterDescription :
+        JSON.parse(JSON.stringify(defaultMetas.defaultTwitterDescription))} />
+    <meta property="twitter:image" content={imageLink ? imageLink :
+        JSON.parse(JSON.stringify(defaultMetas.defaultImageLink))} />
+
+    <title>{title}</title>
+    <!-- for add emoji to favicon -->
+    <!-- <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" /> -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}> <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <!-- FONT link -->
+    
+</head>
+
+<body class="bg-charade-600 text-charade-100 py-6 font-montserrat">
+    <main class=" max-w-5xl m-auto px-5 lg:py-16 lg:px-0">
+
+        <slot />
+
+    </main>
+</body>
+
+</html>

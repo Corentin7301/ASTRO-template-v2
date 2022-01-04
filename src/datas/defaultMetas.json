@@ -1,0 +1,10 @@
+{
+    "defaultTitle": "Site name",
+    "defaultDescription": "Site description",
+    "defaultUrl":"https://sitename.fr",
+    "defaultImageLink":"Social cards image link",
+    "defaultTwitter":"@twitterName",
+    "defaultTwitterUrl":"https://twitter.com/twitterName",
+    "defaultTwitterTitle":"Twitter cards image link",
+    "defaultTwitterDescription":"Site description for the Twitter card"
+}
