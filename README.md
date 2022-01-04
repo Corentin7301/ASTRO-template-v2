@@ -1,10 +1,18 @@
-# Astro + Vue Example
+# Welcome to **Astro template** with **VueJs** and **Tailwindcss** by Corentin PERROUX
 
-```
-npm init astro -- --template framework-vue
-```
+## Demo url
+➡️ astrobuild-template-v2.netlify.app 🚀
+## 🧞 Commands
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/framework-vue)
+All commands are run from the root of the project, from a terminal:
 
-This example showcases Astro working with [Vue](https://v3.vuejs.org/).
+| Command         | Action                                      |
+|:----------------|:--------------------------------------------|
+| `npm install`   | Installs dependencies                       |
+| `npm run dev`   | Starts local dev server at `localhost:3000` |
+| `npm run start`   | Starts local dev server at `localhost:3000` |
+| `npm run build` | Build your production site to `./dist/`     |
+| `npm run preview` | Starts local production server at `localhost:3000`     |
+## 👀 Want to learn more?
 
+For doc and more informations, look https://astro.build/ !
