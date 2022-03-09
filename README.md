@@ -1,7 +1,7 @@
 # Welcome to **Astro template** with **VueJs** and **Tailwindcss** by Corentin PERROUX
 
 ## Demo url
-➡️ [astrobuild-template-v2.netlify.app](astrobuild-template-v2.netlify.app) 🚀
+➡️ [astrobuild-template-v2.netlify.app](https://astrobuild-template-v2.netlify.app/) 🚀
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
