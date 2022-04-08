@@ -1,18 +1,9 @@
-// Full Astro Configuration API Documentation:
-// https://docs.astro.build/reference/configuration-reference
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+import vue from '@astrojs/vue';
+import sitemap from '@astrojs/sitemap';
 
-// @type-check enabled!
-// VSCode and other TypeScript-enabled text editors will provide auto-completion,
-// helpful tooltips, and warnings if your exported object is invalid.
-// You can disable this by removing "@ts-check" and `@type` comments below.
-
-// @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-	buildOptions: {
-		site: 'http://sitename.fr',           // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
-		sitemap: true,         // Generate sitemap (set to "false" to disable)
-	  },
-	  
-	// Enable the Vue renderer to support Vue components.
-	renderers: ['@astrojs/renderer-vue'],
+// https://astro.build/config
+export default defineConfig({
+	integrations: [tailwind(),vue(),sitemap()],
 });
